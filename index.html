@@ -1,12 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Fortune Spars</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="./js/lib/jquery-3.1.1.min.js"></script>
+	<!-- <script src="./js/bootstrap.min.js"></script>
+	<script src="./js/popper.min.js"></script> -->
 </head>
 <body>
-    <h1>Hello</h1>
+	<!-- ## logo -->
+	<header>
+		<div class="logoWrap">
+			<h1><img class="logo" src="./images/logo.png" alt=""><div id="menu-btn"></div></h1>
+			<ul class="sublogo">
+				<li><img src="./images/country1.png" alt=""></li>
+				<li><img src="./images/country2.png" alt=""></li>
+			</ul>
+		</div>
+	</header>
+	<!-- ## logo -->
+
+	<!-- ## nav -->
+	<nav>
+		<div class="navbarWrap">
+			<a class="active" href="./index.html">首页</a>
+			<a class="" href="./about/index.html">关于</a>
+			<a class="" href="./history.html">历史记录</a>
+			<a class="" href="./faq/index.html">FAQ</a>
+			<a class="" href="./about/rules.html">规则</a>
+		</div>
+	</nav>
+	<!-- ## nav -->
+
+	<!-- ## banner -->
+	<div class="bannerWrap">
+		<!-- <img src="./images/banner.png" alt=""> -->
+	</div>
+	<!-- ## banner -->
+
+	<!-- ## lottery -->
+	<article class="main">
+		<section class="resultBg">
+			<div class="resultLeft">
+				<img src="./images/spars_logo.png" alt="" class="lotteryLogo">
+				<div class="resultLeft-box">
+					<div class="periods">
+						<span>Periods:</span><span class="date">2018032130</span>
+					</div>
+					<!-- <div class="waitResult"></div> -->
+					<div class="historyResult">
+						<ul>
+							<li id="ball1" class="ball">9</li>
+							<li id="ball2" class="ball">9</li>
+							<li id="ball3" class="ball">6</li>
+							<li id="ball4" class="ball">5</li>
+							<li id="ball5" class="ball">9</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="resultCenter">
+				<div class="nextTime">
+					<span>Next time:</span><span class="date">2018-03-21 10:21 AM</span>
+				</div>
+				<!-- <div class="waitResult"></div> -->
+				<div class="historyResult">
+					<ul>
+						<li id="ball1" class="nTime">9</li>
+						<li id="ball2" class="nTime">9</li>
+						<li id="ball3" class="nTime">6</li>
+					</ul>
+				</div>
+			</div>
+			<div class="resultRight">
+				<div class="jackpotMoney">
+					<strong>$1318960</strong>
+				</div>
+			</div>
+		</section>
+	</article>
+	<!-- ## lottery -->
+
+	<!-- ## else -->
+	<section class="blockBg">
+		<div class="block1">
+			<div class="tab">
+				<div class="news active">News</div>
+				<div class="faq">Faq</div>
+			</div>
+			<div class="blockInner news show">
+				<div class="title">
+					<h5>News</h5>
+					<a href="./news/index.html" class="more">More>></a>
+				</div>
+				<ul class="blockInner-main news-main py-3">
+					<li><a href="#">HOW VIRTUAL REALITY COULD EFFECT GAMBLING</a></li>
+					<li><a href="#">MICHIGAN LOTTERY ONLINE SALES BRING IN ADDITIONAL $147M FOR THE STATE</a></li>
+					<li><a href="#">Romanian virtual first for Vermantia</a></li>
+					<li><a href="#">Macau has fewer gaming machine makers, suppliers</a></li>
+					<li><a href="#">TABCORP TO ENTER UK GAMBLING MARKET IN SPRING</a></li>
+					<li><a href="#">NEW YORK SENATE COMMITTEE GIVES ONLINE POKER BILL BLINK-AND-YOU-MISSED-IT APPROVAL</a></li>
+					<li><a href="#">RUBY SEVEN STUDIOS INK SOCIAL CASINO DEAL WITH PECHANGA RESORT & CASINO</a></li>
+				</ul>
+			</div>
+			<div class="blockInner faq">
+				<div class="title">
+					<h5>FAQ</h5>
+					<a href="./faq/index.html" class="more">More>></a>
+				</div>
+				<ul class="blockInner-main faq-main py-3">
+					<li>
+						<a class="faq-title" href="#">Q：Where shall I receive the bonus?</a>
+						<a class="fdq-content" href="#">A：If your winning amount is lessthan €500, you can receive the bonus by taking you betting slipto any betting store of every big city. If your winning amount is more than €500, you can contact us bycalling the telephone number on the betting slips or receive the bonus at Tiposdirectly.</a>
+					</li>
+					<li>
+						<a class="faq-title" href="#">Q：What are the business hours?</a>
+						<a class="fdq-content" href="#">A：Business hours are from 06:01 AM to 10:01 PM everyday. Other times are time-outs.</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="block2">
+			<h5>Partner</h5>
+			<ul class="partnerWrap">
+				<li><img src="./images/partner01.png" alt=""></li>
+				<li><img src="./images/partner02.png" alt=""></li>
+				<li><img src="./images/partner03.png" alt=""></li>
+				<li><img src="./images/partner04.png" alt=""></li>
+			</ul>
+		</div>
+	</section>
+	<!-- ## else -->
+
+	<!-- ## copyright -->
+	<footer class="footer">
+		<div class="footerWrap">
+			<ul>
+				<li><a href="./about/index.html">About S.lottery</a></li>
+				<li><a href="./about/game.html">Game Background</a></li>
+				<li><a href="./faq/index.html">FAQ</a></li>
+				<li><a href="./about/rules.html">Rules</a></li>
+			</ul>
+			<div class="copyRight">Copyright© 1997-2015 Multi-State Lottery Association. All Rights Reserved</div>
+		</div>
+	</footer>
+	<script src="js/app.js"></script>
+	<!-- ## copyright -->
 </body>
 </html>

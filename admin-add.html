@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fortune Spars</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="./js/lib/jquery-3.1.1.min.js"></script>
+    <!-- <script src="./js/bootstrap.min.js"></script>
+	<script src="./js/popper.min.js"></script> -->
+</head>
+
+<body>
+    <header class="admin-header">
+        <div class="header-wrapper">
+            <a href="./admin-login.html" class="logo px-3">系统彩后台</a>
+            <ul class="header-info">
+                <li>
+                    <a href="javascript:;" class="account">管理员</a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="logout">登出</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <article class="admin-content">
+        <div class="content-wrapper">
+            <div class="right">
+                <ul class="menu-list">
+                    <li>
+                        <a href="./admin.html">
+                            <i class="fas fa-home"></i>
+                            <span>开奖列表</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admin-add.html" class="active">
+                            <i class="fas fa-plus-circle"></i>
+                            <span>新增内容</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 主修改内容区 -->
+            <div class="left">
+                <div class="left-content">
+                    <header class="title">
+                        <h3>新增内容</h3>
+                    </header>
+                    <article class="content-wrapper">
+                        <div class="content d-flex flex-column">
+                            <div class="content-title">
+                                彩种设置
+                            </div>
+                            
+                            <div class="table-wrapper">
+                                <!-- 批量增加btn -->
+                                <div class="batchlot mb-3 d-flex">
+                                    <button class="ml-auto btn btn-success batchlot-btn float-right">批量增加</button>
+                                </div>
+                                <!-- 批量增加end -->
+
+                                <table class="lottery-table table table-bordered">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>彩种名称</th>
+                                            <th>开奖时间</th>
+                                            <th>开奖期数</th>
+                                            <th>开奖数据</th>
+                                            <th>备注</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <select name="lottery-name" id="lottery-name" class="form-control">
+                                                    <option value="73">极速时时彩</option>
+                                                    <option value="1">重庆时时彩</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <input type="date" name="lottery-time" class="form-control">
+                                            </td>
+                                            <td>
+                                                <input type="text" name="lottery-num" class="form-control">
+                                            </td>
+                                            <td>
+                                                <input type="text" name="lottery-result" class="form-control">
+                                            </td>
+                                            <td>
+                                                <input type="text" name="note" class="form-control">
+                                            </td>
+                                            <td>
+                                                <button type="submit" class="btn-primary btn">送出</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- 换页 -->
+                            <nav aria-label="Page navigation" class="mb-3">
+                                <ul class="pagination justify-content-center mb-0">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- 换页 -->
+
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <!-- 主修改内容区end -->
+        </div>
+    </article>
+    <footer class="admin-footer">
+        <div class="footer-wrapper">
+            COPYRIGHT © CASINO RESERVED
+        </div>
+    </footer>
+
+    <div class="mask">
+        <aside class="model-box">
+            <div class="model-wrapper">
+                <div class="model-header">
+                    <h5 class="title">批量增加</h5>
+                </div>
+                <div id="batchlot-wrapper" data-title="批量" class="model-body">
+                    <div id="batchlot-box" class="batchlot-area mb-3">
+                        <textarea name="batchlot-area" id="batchlot-area" cols="30" rows="10" class="form-control"></textarea>
+                    </div>
+                    <div class="btn-group justify-content-center w-100">
+                        <!-- 批量增加送出 -->
+                        <a href="javascript:;" id="batchlot-success" class="btn btn-success batchlot-success">确认</a>
+                        <!-- 批量增加送出end -->
+                        <button type="submit" class="btn btn-cancel btn-outline-secondary">取消</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="js/app.js"></script>
+    <!-- ## copyright -->
+</body>
+
+</html>
