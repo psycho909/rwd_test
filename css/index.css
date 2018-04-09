@@ -22,7 +22,6 @@ body {
   border: none;
   font-size: .75rem;
   font-weight: bold;
-  width: 106px;
   background-image: url("../images/cxcalendar.png");
   background-repeat: no-repeat;
   background-position: 0 center;
@@ -594,7 +593,11 @@ footer {
   footer .footerWrap .copyRight {
     font-size: 0.6rem; }
   footer .footerWrap ul li a {
-    font-size: 0.6rem; } }
+    font-size: 0.6rem; }
+  article .lotteryHistory .lotteryHistory-left {
+    width: 64%; }
+  article .lotteryHistory .lotteryHistory-right {
+    width: 34%; } }
 
 @media (max-width: 768.98px) {
   .bannerWrap {
@@ -610,9 +613,86 @@ footer {
     border-radius: 0;
     text-align: center; }
   .blockBg .block2 .partnerWrap li {
-    padding: 2rem 0 3rem 0; } }
+    padding: 2rem 0 3rem 0; }
+  article .lotteryHistory .lotteryHistory-left .lotteryResults-box ul {
+    margin: 1rem 0; }
+  article .lotteryHistory .lotteryHistory-left .lotteryResults-box ul li {
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 1.25rem; }
+  article .lotteryHistory .lotteryHistory-left .lotteryResults-box .line {
+    margin: 1rem 0; }
+  .lotteryResults-table .table thead tr th {
+    font-size: .6rem;
+    padding: .5rem; }
+  .lotteryResults-table .table tbody tr td {
+    font-size: 0.6rem;
+    padding: .5rem; }
+  article .lotteryHistory .lotteryHistory-left {
+    width: 69%; }
+  article .lotteryHistory .lotteryHistory-right {
+    width: 30%; }
+  article .lotteryHistory .lotteryHistory-right .countdown .countdown-box {
+    padding: .6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  article .lotteryHistory .lotteryHistory-right .countdown .countdown-box .countdown-time span {
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    font-size: 1rem; }
+  article .lotteryHistory .lotteryHistory-right .countdown .countdown-box .countdown-sub {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  article .lotteryHistory .lotteryHistory-right .countdown .countdown-box .countdown-sub span.date {
+    margin-left: 0; }
+  article .lotteryHistory .lotteryHistory-right .countdown .countdown-box .countdown-sub span {
+    font-size: .6rem; }
+  .countdown-time.mt-3 {
+    margin-top: 0.5rem !important; }
+  article .lotteryHistory .lotteryHistory-right .trendCart .title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  article .lotteryHistory .lotteryHistory-left .title {
+    padding: .5rem 0rem; }
+  article .lotteryHistory .lotteryHistory-left .lotteryResults-box {
+    margin: .5rem 0; }
+  article .lotteryHistory .lotteryHistory-right .title {
+    padding: .6rem 0; }
+  article .lotteryHistory .lotteryHistory-right .countdown .countdown-box {
+    margin: .5rem 0; }
+  article .lotteryHistory .lotteryHistory-right .title {
+    padding: .5rem 0; }
+  article .lotteryHistory .lotteryHistory-right .trendCart .trendCart-box {
+    margin: .5rem 0; }
+  article .lotteryHistory .lotteryHistory-left .lotteryResults-box .lotteryResults-table .pagnation-group .btn {
+    width: 40%; }
+  article .lotteryHistory .lotteryHistory-right .trendCart .trendCart-box {
+    max-height: 245px; }
+  article.main {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto; } }
 
 @media (max-width: 590px) {
+  header .logoWrap h1 .logo {
+    width: 138px;
+    height: auto; }
   .bannerWrap {
     height: 280px; }
   article.main {
@@ -678,7 +758,9 @@ footer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
   footer .footerWrap ul {
-    width: 100%; } }
+    width: 100%; }
+  article .lotteryHistory .lotteryHistory-right .trendCart .trendCart-box {
+    max-height: 255px; } }
 
 @media (max-width: 420px) {
   header .logoWrap h1 {
@@ -760,4 +842,46 @@ footer {
         flex-basis: 100%;
     display: none; }
   .blockBg .block1 .blockInner.show {
-    display: block; } }
+    display: block; }
+  article .lotteryHistory {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  article .lotteryHistory .lotteryHistory-left {
+    width: 100%; }
+  article .lotteryHistory .lotteryHistory-right {
+    width: 100%; }
+  article .lotteryHistory .lotteryHistory-right .countdown .countdown-box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .lotteryBall-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 0; }
+  article .lotteryHistory .lotteryHistory-right .trendCart .trendCart-box .lotteryBall-list li .lotteryBall-num {
+    margin-right: 0; }
+  article .lotteryHistory .lotteryHistory-right .trendCart .trendCart-box .lotteryBall-list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0; }
+  article .lotteryHistory .lotteryHistory-right .trendCart .trendCart-box {
+    padding: .6rem; }
+  .lotteryResults-ball ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
