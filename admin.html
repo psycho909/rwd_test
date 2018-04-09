@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fortune Spars</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="./js/lib/jquery-3.1.1.min.js"></script>
+    <!-- <script src="./js/bootstrap.min.js"></script>
+	<script src="./js/popper.min.js"></script> -->
+</head>
+
+<body>
+    <header class="admin-header">
+        <div class="header-wrapper">
+            <a href="./admin-login.html" class="logo px-3">系统彩后台</a>
+            <ul class="header-info">
+                <li>
+                    <a href="javascript:;" class="account">管理员</a>
+                </li>
+                <li>
+                    <a href="./admin-login.html" class="logout">登出</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <article class="admin-content">
+        <div class="content-wrapper">
+            <div class="right">
+                <ul class="menu-list">
+                    <li>
+                        <a href="admin.html" class="active">
+                            <i class="fas fa-home"></i>
+                            <span>开奖列表</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admin-add.html">
+                            <i class="fas fa-plus-circle"></i>
+                            <span>新增内容</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 主修改内容区 -->
+            <div class="left">
+                <div class="left-content">
+                    <header class="title">
+                        <h3>开奖列表</h3>
+                    </header>
+                    <article class="content-wrapper">
+                        <div class="content d-flex flex-column">
+                            <div class="content-title">
+                                彩种开奖
+                            </div>
+                            <div class="table-wrapper">
+                                <div class="table-control d-flex">
+                                    <a href="admin-add.html" class="btn add-btn">新增</a>
+                                    <form action="" class="search-wrapper d-flex">
+                                        <input type="date" id="lotteryDate-search" name="lotteryDate-search" class="form-control mr-3" placeholder="请选择日期...">
+                                        <input type="text" id="search" class="form-control" name="search" placeholder="请输入期数...">
+                                        <button class="btn search-btn" type="submit">查询</button>
+                                    </form>
+                                </div>
+                                <table class="lottery-table table table-bordered">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>彩种名称</th>
+                                            <th>开奖时间</th>
+                                            <th>开奖期数</th>
+                                            <th>开奖数据</th>
+                                            <th>备注</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="">
+                                        <tr>
+                                            <td>
+                                                <input type="text" class="form-control" value="极速时时彩" name="lottery-name" readonly>
+                                            </td>
+                                            <td>
+                                                <input type="date" id="lottery-time" name="lottery-time" class="form-control" value="2018-03-28" readonly>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="lottery-num" class="form-control" value="2018030790" readonly>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="lottery-result" class="form-control" value="1,2,3,4,5" readonly>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="note" class="form-control" value="开奖开奖开奖开奖" readonly>
+                                            </td>
+                                            <td class="td-btn">
+                                                <div class="defalut-btn btn-group">
+                                                    <a href="javascript:;" id="modify-btn" class="btn btn-warning">修改</a>
+                                                    <a href="javascript:;" data-title="删除" class="btn btn-model btn-danger">删除</a>
+                                                </div>
+                                                <div class="modify-btn btn-group">
+                                                    <a href="javascript:;" data-title="保存" class="btn btn-warning">保存</a>
+                                                    <a href="javascript:;" data-title="取消" class="btn btn-danger">取消</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- 换页 -->
+                            <nav aria-label="Page navigation" class="mb-3">
+                                <ul class="pagination justify-content-center mb-0">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- 换页 -->
+
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <!-- 主修改内容区end -->
+        </div>
+    </article>
+    <footer class="admin-footer">
+        <div class="footer-wrapper">
+            COPYRIGHT © CASINO RESERVED
+        </div>
+    </footer>
+    <div class="mask">
+        <aside class="model-box">
+            <div class="model-wrapper">
+                <div class="model-header">
+                    <h5 class="title"></h5>
+                </div>
+                <div id="del-wrapper" data-title="删除" class="model-body">
+                    <a href="javascript:;" id="del-btn" class="btn model-btn">确认</a>
+                    <button type="submit" class="btn btn-cancel btn-outline-secondary">取消</button>
+                </div>
+                <div id="save-wrapper" data-title="保存" class="model-body">
+                    <a href="javascript:;" id="save-btn" class="btn model-btn">确认</a>
+                    <button type="submit" class="btn btn-cancel btn-outline-secondary">取消</button>
+                </div>
+                <div id="reset-wrapper" data-title="取消" class="model-body">
+                    <a href="javascript:;" id="reset-btn" class="btn model-btn">确认</a>
+                    <button type="submit" class="btn btn-cancel btn-outline-secondary">取消</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <script src="js/app.js"></script>
+    <!-- ## copyright -->
+</body>
+
+</html>

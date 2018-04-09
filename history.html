@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Fortune Spars</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<!-- <link href="./css/bootstrap-datepicker3.standalone.min.css" rel="stylesheet"> -->
+	<link href="./css/jquery.cxcalendar.css" rel="stylesheet">
+	<link href="./css/dataTables.bootstrap4.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/index.css">
+	<script src="./js/lib/jquery-3.1.1.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/popper.min.js"></script>
+	<script src="./js/jquery.cxcalendar.min.js"></script>
+	<!-- <script src="./js/bootstrap-datepicker.min.js"></script>
+	<script src="./js/bootstrap-datepicker.zh-TW.min.js"></script> -->
+
+	<script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/dataTables.bootstrap4.min.js"></script>
+</head>
+<body>
+	<!-- ## logo -->
+	<header>
+		<div class="logoWrap">
+			<h1><img class="logo" src="./images/logo.png" alt=""><div id="menu-btn"></div></h1>
+			<ul class="sublogo">
+				<li><img src="./images/country1.png" alt=""></li>
+				<li><img src="./images/country2.png" alt=""></li>
+			</ul>
+		</div>
+	</header>
+	<!-- ## logo -->
+
+	<!-- ## nav -->
+	<nav>
+		<div class="navbarWrap">
+			<a class="" href="./index.html">首页</a>
+			<a class="" href="./about/index.html">关于</a>
+			<a class="active" href="./history.html">历史记录</a>
+			<a class="" href="./faq/index.html">FAQ</a>
+			<a class="" href="./about/rules.html">规则</a>
+		</div>
+	</nav>
+	<!-- ## nav -->
+
+	<!-- ## lottery -->
+	<article class="main">
+		<div class="lotteryHistory">
+			<section class="lotteryHistory-left">
+				<h4 class="title">Lottery results</h4>
+				<div class="lotteryResults-box">
+					<div class="countdown-sub">
+						<span>Periods:</span><span class="date">2018032190</span>
+					</div>
+					<div class="lotteryResults-ball">
+						<ul>
+							<li>0</li>
+							<li>9</li>
+							<li>1</li>
+							<li>9</li>
+							<li>3</li>
+						</ul>
+					</div>
+					<div class="line"></div>
+					<form action="" class="lotteryResults-form">
+						<div class="form-group">
+							<input type="text" id="draw-numbers" name="draw-numbers" placeholder="2018030790">
+							<button type="submit" class="btn btn-search" data-date-end-date="0d">Search</button>
+						</div>
+					</form>
+					<div class="lotteryResults-table">
+						<div class="lotteryResults-date">
+							<div class="page">
+								<span>Page:</span>
+								<span>1/1</span>
+							</div>
+							<input type="text" id="cal_1" class="datepicker">
+						</div>
+						<table class="table">
+							<thead>
+								<tr>
+									<th>Draw Date</th>
+									<th>Draw Numbers</th>
+									<th>Draw Results</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2018-03-07</td>
+									<td>2018030790</td>
+									<td>
+										<span class="lotteryResults-tableBall">1</span>
+										<span class="lotteryResults-tableBall">2</span>
+										<span class="lotteryResults-tableBall">3</span>
+										<span class="lotteryResults-tableBall">4</span>
+										<span class="lotteryResults-tableBall">5</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="pagnation-group text-center">
+							<button class="btn prev">Previous</button>
+							<button class="btn next">Next</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="lotteryHistory-right">
+				<div class="countdown">
+					<h4 class="title">Countdown</h4>
+					<div class="countdown-box">
+						<div class="countdown-sub">
+							<span>Next time:</span><span class="date">3/22/2018 5:11 AM</span>
+						</div>
+						<div class="countdown-time mt-3 d-flex">
+							<span>0</span>
+							<span>1</span>
+							<span>2</span>
+						</div>
+					</div>
+				</div>
+				<div class="trendCart">
+					<div class="title">
+						<h4>Trend chart</h4>
+						<input type="text" class="datepicker" id="cal_2" data-position="bottomLeft">
+					</div>
+					<div class="trendCart-box">
+						<ul class="lotteryBall-list">
+							<li>
+								<span class="lotteryBall-num">0</span>
+								<span class="lotteryBall-count">0</span>
+							</li>
+							<li>
+								<span class="lotteryBall-num">1</span>
+								<span class="lotteryBall-count">0</span>
+							</li>
+							<li>
+								<span class="lotteryBall-num">2</span>
+								<span class="lotteryBall-count">0</span>
+							</li>
+							<li>
+								<span class="lotteryBall-num">3</span>
+								<span class="lotteryBall-count">0</span>
+							</li>
+							<li>
+								<span class="lotteryBall-num">4</span>
+								<span class="lotteryBall-count">0</span>
+							</li>
+							<li>
+								<span class="lotteryBall-num">5</span>
+								<span class="lotteryBall-count">0</span>
+							</li>
+							<li>
+								<span class="lotteryBall-num">6</span>
+								<span class="lotteryBall-count">0</span>
+							</li>
+							<li>
+								<span class="lotteryBall-num">7</span>
+								<span class="lotteryBall-count">0</span>
+							</li>
+							<li>
+								<span class="lotteryBall-num">8</span>
+								<span class="lotteryBall-count">0</span>
+							</li>
+							<li>
+								<span class="lotteryBall-num">9</span>
+								<span class="lotteryBall-count">0</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+	</article>
+	<!-- ## lottery -->
+	
+	<!-- ## copyright -->
+	<footer class="footer">
+		<div class="footerWrap">
+			<ul>
+				<li><a href="./about/index.html">About S.lottery</a></li>
+				<li><a href="./about/game.html">Game Background</a></li>
+				<li><a href="./faq/index.html">FAQ</a></li>
+				<li><a href="./about/rules.html">Rules</a></li>
+			</ul>
+			<div class="copyRight">Copyright© 1997-2015 Multi-State Lottery Association. All Rights Reserved</div>
+		</div>
+	</footer>
+	<script src="js/app.js"></script>
+	<!-- ## copyright -->
+</body>
+</html>
